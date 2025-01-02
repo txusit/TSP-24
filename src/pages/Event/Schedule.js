@@ -41,7 +41,7 @@ class Schedule extends Component {
           day: '2',
           month: 'JAN',
           send: '',
-          link: '/external-apply-form',
+          link: '',// UPDATE THIS WITH /external-apply-form
         },
         // {
         //   id: 2,
@@ -309,8 +309,8 @@ class Schedule extends Component {
                                         className="btn btn-sm btn-outline-primary mouse-down"
                                       >
                                         {show.id == 1
-                                          ? 'APPLICATION FORM'
-                                          : 'JOIN NOW'}
+                                          ? 'INTEREST FORM'
+                                          : 'APPLICATION FORM'}
                                       </Link>
                                     ) : (
                                       <span></span>
