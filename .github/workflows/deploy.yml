@@ -1,33 +1,35 @@
 name: Deploy
 
+# Events that trigger this Github Action
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
 
+# Only have one job (build)
 jobs:
   build:
-    runs-on: ubuntu-20.04  # Or ubuntu-22.04, depending on compatibility
-
+  
+    runs-on: ubuntu-latest
+    
+    # Steps to build
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
         
       - name: Read .nvmrc
-        run: echo "NVMRC=$(cat .nvmrc)" >> $GITHUB_ENV
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
         id: nvm
 
       - name: Set the correct Node version using nvm (.nvmrc)
         uses: actions/setup-node@v1
         with:
-          node-version: "${{ env.NVMRC }}"
+          node-version: "${{ steps.nvm.outputs.NVMRC }}"
           
       - name: Install dependencies
         run: npm install
-
-      - name: Build the project
-        run: npm run build --verbose
+      - run: npm run build
         env:
           CI: false
       
@@ -38,6 +40,7 @@ jobs:
           cp ./src/assets/css/style.css ./build/assets/css
           cp ./src/assets/css/colors/default.css ./build/assets/css/colors
   
+      # AWS Credentials stored in github secrets. Can find s3-code user's access keys in IAM user list
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -45,5 +48,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       
+      # Updates S3 Bucket with repo code
       - name: Sync with AWS S3 Bucket
-        run: aws s3 sync ./build s3://stockpitch.texasusit.org --debug
+        run: aws s3 sync ./build s3://stockpitch.texasusit.org
