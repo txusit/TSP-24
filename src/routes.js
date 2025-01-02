@@ -27,6 +27,10 @@ const ExternalApplyForm = React.lazy(() => {
   window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSff9OXNqkfArRupro3RwbUHpXNlslfucMBexfBttviyBPlbgw/viewform');
   return null;
 });
+const InterestForm = React.lazy(() => {
+  window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSealdtDGDamD5KT9dDZcigCSgI9Pp1pQaxJJq3yAvkrGR3ICA/viewform?usp=dialog');
+  return null;
+});
 
 //Special
 const PageComingSoon = React.lazy(() =>
@@ -88,7 +92,11 @@ const routes = [
     component: ExternalApplyForm,
     // component: PageComingSoon
   },
-
+  {
+    path: '/external-interest-form',
+    component: InterestForm,
+    // component: PageComingSoon
+  },
   //Special Pages
   {
     path: '/page-comingsoon',
