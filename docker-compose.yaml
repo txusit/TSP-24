@@ -1,6 +1,6 @@
 services:
   image:
-    container_name: tsp-23-app
+    container_name: tsp-24-app
     build:
       context: .
       dockerfile: Dockerfile
