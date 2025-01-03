@@ -482,7 +482,7 @@ class PageAboutUs extends Component {
                           <span className="text-primary">
                             <b>president@usiteam.org</b>
                           </span>
-                          \x20via the form linked above.
+                          {' '}via the form linked above.
                         </p>
                         <br></br>
                         <p className="text-muted mb-0 faq-ans">
