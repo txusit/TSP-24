@@ -139,7 +139,7 @@ class Schedule extends Component {
           time: '10:30AM to 11:00AM',
           day: '02',
           // month: 'NOV',
-          location: 'WCP 2.302',
+          location: 'Room TBD',
         },
         {
           id: 3,
@@ -163,7 +163,7 @@ class Schedule extends Component {
           time: '02:00PM to 03:25PM',
           day: '05',
           // month: 'NOV',
-          location: 'WCP 1.402',
+          location: 'Room TBD',
         },
         {
           id: 6,
@@ -179,7 +179,7 @@ class Schedule extends Component {
           time: '04:00PM to 06:00PM',
           day: '07',
           // month: 'NOV',
-          location: 'WCP 1.402',
+          location: 'Room TBD',
         },
         {
           id: 8,
@@ -187,7 +187,7 @@ class Schedule extends Component {
           time: '06:15PM to 06:30PM',
           day: '07',
           // month: 'NOV',
-          location: 'WCP 1.402',
+          location: 'Room TBD',
         },
       ],
       activeTab: '1',
