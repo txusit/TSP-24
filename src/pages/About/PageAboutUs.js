@@ -241,6 +241,9 @@ class PageAboutUs extends Component {
                               </span>{' '}
                               .
                             </li>
+                            <li>
+                            Teams must produce an original work and may not use any pitch that has been used in any additional academic or private setting.
+                            </li>
                           </ul>
                         </p>
                       </CardBody>
@@ -461,15 +464,15 @@ class PageAboutUs extends Component {
                     <Collapse isOpen={this.state.col1}>
                       <CardBody>
                         <p className="text-muted mb-0 faq-ans">
-                          Due to limited capacity, all registering teams are required to submit a one-page overview
+                          Due to limited capacity, all interested teams are required to submit a one-page overview
                           of an investment thesis. *Note: the thesis may change between your one-pager
                           submission and competition day, but the security should remain the same. Submissions will
                           be reviewed on a rolling basis, after which teams will be notified whether they have been
                           chosen to compete. Feel free to begin working on the one-page submission in advance of
-                          the January 16th registration date. This thesis submission would be open on a rolling basis
-                          until registration closes at {' '}
+                          the January 2nd application date. This thesis submission would be open on a rolling basis
+                          until applications close on {' '} 
                           <span className="text-primary">
-                            <b>Monday, Feburary 5th at 11:59 PM CST</b>
+                            <b>Sunday, February 2nd at 11:59 PM CST</b>
                           </span>{' '}
                           in{' '}
                           <span className="text-primary">
@@ -479,7 +482,7 @@ class PageAboutUs extends Component {
                           <span className="text-primary">
                             <b>president@usiteam.org</b>
                           </span>
-                          .
+                          via the form linked above.
                         </p>
                         <br></br>
                         <p className="text-muted mb-0 faq-ans">
