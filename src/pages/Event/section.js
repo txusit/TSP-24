@@ -56,7 +56,7 @@ class Section extends Component {
         >
           <div
             className="bg-overlay bg-black bg-gradient"
-            style={{ opacity: '0' }}
+            style={{ opacity: '0.1' }}
           ></div>
           <Container>
             <Row className="justify-content-center">
