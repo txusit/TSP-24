@@ -47,7 +47,7 @@ class Section extends Component {
     return (
       <React.Fragment>
         <section
-          className="d-table w-100"
+          className="bg-half-260 d-table w-100"
           style={{
             background: `url(${bgImage}) center center`,
             backgroundSize: 'cover',
