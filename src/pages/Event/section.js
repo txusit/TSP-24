@@ -7,7 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 //CountDown
 import Countdown from 'react-countdown-now';
 
-import bgImage from '../../assets/images/event/TSP Foam Board (1).jpg';
+import bgImage from '../../assets/images/event/black.png';
 
 // Random component
 const Completionist = () => <span>You are good to go!</span>;
@@ -47,7 +47,7 @@ class Section extends Component {
     return (
       <React.Fragment>
         <section
-          className="d-table w-100"
+          className="bg-half-260 d-table w-100"
           style={{
             background: `url(${bgImage}) center center`,
             backgroundSize: 'cover',
@@ -56,7 +56,7 @@ class Section extends Component {
         >
           <div
             className="bg-overlay bg-black bg-gradient"
-            style={{ opacity: '0.1' }}
+            style={{ opacity: '0.55' }}
           ></div>
           <Container>
             <Row className="justify-content-center">
