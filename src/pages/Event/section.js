@@ -54,10 +54,10 @@ class Section extends Component {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          {/* <div
+          <div
             className="bg-overlay bg-black bg-gradient"
             style={{ opacity: '0.55' }}
-          ></div> */}
+          ></div>
           <Container>
             <Row className="justify-content-center">
               <Col lg="10" className="text-center">
