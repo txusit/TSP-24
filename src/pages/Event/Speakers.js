@@ -13,6 +13,7 @@ import sigLogo from '../../assets/images/client/sig.JPG';
 import yacktmanLogo from '../../assets/images/client/yacktman.PNG';
 import blackstonelogo from '../../assets/images/client/blackstone.png';
 import citadellogo from '../../assets/images/client/Citadel_Logo_File.jpg';
+import satorilogo from '../../assets/images/client/satori_logo_vert-2.png';
 
 
 class Speakers extends Component {
@@ -94,11 +95,16 @@ class Speakers extends Component {
           alt: 'Citadel Sponsor',
           //sponsorRank: 'Gold',
         },
-        // {
-        //   image: sigLogo,
-        //   alt: 'Citadel Sponsor',
-        //   //sponsorRank: 'Silver',
-        // },
+        {
+          image: sigLogo,
+          alt: 'Citadel Sponsor',
+          //sponsorRank: 'Silver',
+        },
+        {
+          image: satorilogo,
+          alt: 'Citadel Sponsor',
+          //sponsorRank: 'Silver',
+        },
         // {
         //   image: blackstonelogo,
         //   alt: 'Citadel Sponsor',
