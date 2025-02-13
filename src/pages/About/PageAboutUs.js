@@ -414,7 +414,7 @@ class PageAboutUs extends Component {
                               only.
                             </li>
                             <li>
-                                Teams will have 12 minutes to present with 5 minutes of Q&A in the preliminary rounds and 10 minutes of Q&A in the finals.
+                                Teams will have 12 minutes to present with 7 minutes of Q&A in the preliminary rounds and 10 minutes of Q&A in the finals.
                             </li>
                           </ul>
                         </p>
