@@ -68,7 +68,7 @@ class Section extends Component {
                   <p className="para-desc title-dark mx-auto text-light">
                     10:30 am CST
                     <br />
-                    February 15th, 2025
+                    February 21st, 2026
                   </p>
 
                   <Row>
@@ -77,7 +77,7 @@ class Section extends Component {
                         <Countdown
                           date={
                             Date.now() +
-                            Math.abs(new Date('2025/02/15 10:30') - Date.now())
+                            Math.abs(new Date('2026/02/21 10:30') - Date.now())
                           }
                           renderer={renderer}
                         />
