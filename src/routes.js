@@ -24,11 +24,11 @@ const ExternalMap = React.lazy(() => {
   return null;
 });
 const ExternalApplyForm = React.lazy(() => {
-  window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSfeJ06e7T1cbS0pCDYknGuIIXT9jPEntC-F6qhari4lXp3dAA/viewform?usp=dialog');
+  window.location.replace('https://forms.gle/VkRAYjiwpGY3JWkM7');
   return null;
 });
 const InterestForm = React.lazy(() => {
-  window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSealdtDGDamD5KT9dDZcigCSgI9Pp1pQaxJJq3yAvkrGR3ICA/viewform?usp=dialog');
+  window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSf_gQ42JfxvGfYGDKoM_xqXYw6wJJ6A5fSxx1QPTED7IHw67Q/viewform');
   return null;
 });
 
