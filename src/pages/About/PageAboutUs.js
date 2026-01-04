@@ -475,7 +475,7 @@ class PageAboutUs extends Component {
                           the January 2nd application date. This thesis submission would be open on a rolling basis
                           until applications close on {' '} 
                           <span className="text-primary">
-                            <b>Sunday, February 2nd at 11:59 PM CST</b>
+                            <b>Sunday, February 8th at 11:59 PM CST</b>
                           </span>{' '}
                           in{' '}
                           <span className="text-primary">
