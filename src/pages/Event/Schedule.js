@@ -20,180 +20,147 @@ import SectionTitle from '../../components/Shared/SectionTitle';
 
 class Schedule extends Component {
   constructor(props) {
-    super(props);
-    this.state = {
-      registration: [
-        {
-          id: 1,
-          title: 'Interest Form Opens',
-          location: '',
-          time: '9:00 AM CST',
-          day: '1',
-          month: 'JAN',
-          send: '',
-          link: '/external-interest-form',
-        },
-        {
-          id: 2,
-          title: 'Registration Opens',
-          location: '',
-          time: '9:00 AM CST',
-          day: '2',
-          month: 'JAN',
-          send: '',
-          link: '/external-apply-form',
-        },
-        // {
-        //   id: 2,
-        //   title: 'Texas Stock Pitch Information Session',
-        //   location: 'Virtual',
-        //   time: '6:00 PM - 7:00 PM CST',
-        //   day: '25',
-        //   month: 'JAN',
-        //   send: '',
-        //   link: 'https://utexas.zoom.us/j/97538483962',
-        // },
-        {
-          id: 3,
-          title: 'Priority Deadline',
-          location: '',
-          time: '11:59 PM CST',
-          day: '19',
-          month: 'JAN',
-          send: '',
-          link: '',
-        },
-        {
-          id: 4,
-          title: 'Regular Deadline',
-          location: '',
-          time: '11:59 PM CST',
-          day: '2',
-          month: 'FEB',
-          send: '',
-          link: '',
-        },
-        // {
-        //   id: 4,
-        //   title: 'Executive Summary & Resumes Due',
-        //   location: '',
-        //   time: '11:59 PM CST',
-        //   day: '13',
-        //   month: 'FEB',
-        //   send: '',
-        //   link: '',
-        // },
-        {
-          id: 5,
-          title: 'Networking Dinner',
-          location: '',
-          time: '6:00 PM CST',
-          day: '14',
-          month: 'FEB',
-          send: '',
-          link: '',
-        },
-        {
-          id: 6,
-          title: 'Competition Day',
-          location: '',
-          time: '10:30 AM CST',
-          day: '15',
-          month: 'FEB',
-          send: '',
-          link: '',
-        },
-        // {
-        //   id: 6,
-        //   title: 'Optional Pitch Thesis Submission',
-        //   location: '',
-        //   time: '5:00 PM CST',
-        //   day: '17',
-        //   month: 'FEB',
-        //   send: 'president@usiteam.org',
-        //   link: '',
-        // },
-        // {
-        //   id: 7,
-        //   title: 'Networking Dinner and Career Panel',
-        //   location: 'TBD',
-        //   time: '6:00 PM - 8:30 PM CST',
-        //   day: '17',
-        //   month: 'FEB',
-        //   send: '',
-        //   link: '',
-        // },
-      ],
-      competitionday: [
-        {
-          id: 1,
-          title: 'Arrive',
-          time: '10:15AM to 10:30AM',
-          day: '01',
-          // month: 'NOV',
-          location: 'William C. Powers Student Activity Center',
-        },
-        {
-          id: 2,
-          title: 'Breakfast and Check-In',
-          time: '10:30AM to 11:00AM',
-          day: '02',
-          // month: 'NOV',
-          location: 'Room TBD',
-        },
-        {
-          id: 3,
-          title: 'Opening Remarks and Speaker',
-          time: '11:00AM to 11:50AM',
-          day: '03',
-          // month: 'NOV',
-          location: 'WCP 1.402',
-        },
-        {
-          id: 4,
-          title: 'Preliminary Rounds',
-          time: '12:00PM to 02:00PM',
-          day: '04',
-          // month: 'NOV',
-          location: 'Rooms TBD',
-        },
-        {
-          id: 5,
-          title: 'Lunch and Speaker',
-          time: '02:00PM to 03:25PM',
-          day: '05',
-          // month: 'NOV',
-          location: 'Room TBD',
-        },
-        {
-          id: 6,
-          title: 'Announce Finalists and Feedback',
-          time: '03:30PM to 04:00PM',
-          day: '06',
-          // month: 'NOV',
-          location: 'Room TBD',
-        },
-        {
-          id: 7,
-          title: 'Finals',
-          time: '04:00PM to 06:00PM',
-          day: '07',
-          // month: 'NOV',
-          location: 'Room TBD',
-        },
-        {
-          id: 8,
-          title: 'Winners and Photos',
-          time: '06:15PM to 06:30PM',
-          day: '07',
-          // month: 'NOV',
-          location: 'Room TBD',
-        },
-      ],
-      activeTab: '1',
-    };
-    this.toggle = this.toggle.bind(this);
-  }
+  super(props);
+
+  this.state = {
+    registration: [
+      {
+        id: 1,
+        title: 'Application Opens',
+        location: '',
+        time: '9:00 AM CT',
+        day: '2',
+        month: 'JAN',
+        send: '',
+        link: 'https://forms.gle/VkRAYjiwpGY3JWkM7',
+      },
+      {
+        id: 2,
+        title: 'Priority Application Deadline (One-Pager & Resumes Due)',
+        location: '',
+        time: '11:59 PM CT',
+        day: '18',
+        month: 'JAN',
+        send: '',
+        link: '',
+      },
+      {
+        id: 3,
+        title: 'Regular Application Deadline (One-Pager & Resumes Due)',
+        location: '',
+        time: '11:59 PM CT',
+        day: '8',
+        month: 'FEB',
+        send: '',
+        link: '',
+      },
+      {
+        id: 4,
+        title: 'Executive Summary (Final Submission)',
+        location: '',
+        time: '11:59 PM CT',
+        day: '16',
+        month: 'FEB',
+        send: '',
+        link: '',
+      },
+      {
+        id: 5,
+        title: 'Presentations Due (PDF & PPT)',
+        location: '',
+        time: '11:59 PM CT',
+        day: '19',
+        month: 'FEB',
+        send: '',
+        link: '',
+      },
+      {
+        id: 6,
+        title: 'Networking Dinner & Career Panel',
+        location: '',
+        time: '6:00 PM – 9:00 PM CT',
+        day: '20',
+        month: 'FEB',
+        send: '',
+        link: '',
+      },
+      {
+        id: 7,
+        title: 'Texas Stock Pitch',
+        location: '',
+        time: '10:00 AM – 6:30 PM CT',
+        day: '21',
+        month: 'FEB',
+        send: '',
+        link: '',
+      },
+    ],
+
+    competitionday: [
+      {
+        id: 1,
+        title: 'Arrive',
+        time: '10:15AM to 10:30AM',
+        day: '01',
+        location: 'William C. Powers Student Activity Center',
+      },
+      {
+        id: 2,
+        title: 'Breakfast and Check-In',
+        time: '10:30AM to 11:00AM',
+        day: '02',
+        location: 'Room TBD',
+      },
+      {
+        id: 3,
+        title: 'Opening Remarks and Speaker',
+        time: '11:00AM to 11:50AM',
+        day: '03',
+        location: 'WCP 1.402',
+      },
+      {
+        id: 4,
+        title: 'Preliminary Rounds',
+        time: '12:00PM to 02:00PM',
+        day: '04',
+        location: 'Rooms TBD',
+      },
+      {
+        id: 5,
+        title: 'Lunch and Speaker',
+        time: '02:00PM to 03:25PM',
+        day: '05',
+        location: 'Room TBD',
+      },
+      {
+        id: 6,
+        title: 'Announce Finalists and Feedback',
+        time: '03:30PM to 04:00PM',
+        day: '06',
+        location: 'Room TBD',
+      },
+      {
+        id: 7,
+        title: 'Finals',
+        time: '04:00PM to 06:00PM',
+        day: '07',
+        location: 'Room TBD',
+      },
+      {
+        id: 8,
+        title: 'Winners and Photos',
+        time: '06:15PM to 06:30PM',
+        day: '07',
+        location: 'Room TBD',
+      },
+    ],
+
+    activeTab: '1',
+  };
+
+  this.toggle = this.toggle.bind(this);
+}
+
 
   toggle(tab) {
     this.setState({ activeTab: tab });
@@ -308,21 +275,21 @@ class Schedule extends Component {
                                       )}
                                       {show.location}
                                     </p>
-                                    {show.link != '' ? (
-                                      <Link
-                                        to={{
-                                          pathname: show.link,
-                                        }}
-                                        target="_blank"
-                                        className="btn btn-sm btn-outline-primary mouse-down"
-                                      >
-                                        {show.id == 1
-                                          ? 'INTEREST FORM'
-                                          : 'APPLICATION FORM'}
-                                      </Link>
-                                    ) : (
-                                      <span></span>
-                                    )}
+                                    {show.link !== '' ? (
+  <a
+    href={show.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-sm btn-outline-primary mouse-down"
+  >
+    {show.id == 1
+      ? 'INTEREST FORM'
+      : 'APPLICATION FORM'}
+  </a>
+) : (
+  <span></span>
+)}
+
                                   </div>
                                 </div>
                               </CardBody>
