@@ -275,20 +275,21 @@ class Schedule extends Component {
                                       )}
                                       {show.location}
                                     </p>
-                                    {show.link !== '' ? (
-  <a
-    href={show.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn btn-sm btn-outline-primary mouse-down"
-  >
-    {show.id == 1
-      ? 'INTEREST FORM'
-      : 'APPLICATION FORM'}
-  </a>
-) : (
-  <span></span>
-)}
+                                    {show.link != '' ? (
+                                      <Link
+                                        to={{
+                                          pathname: show.link,
+                                        }}
+                                        target="_blank"
+                                        className="btn btn-sm btn-outline-primary mouse-down"
+                                      >
+                                        {show.id == 1
+                                          ? 'INTEREST FORM'
+                                          : 'APPLICATION FORM'}
+                                      </Link>
+                                    ) : (
+                                      <span></span>
+                                    )}
 
                                   </div>
                                 </div>

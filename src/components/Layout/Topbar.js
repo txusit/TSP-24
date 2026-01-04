@@ -161,17 +161,16 @@ class Topbar extends Component {
             {(() => {
               return (
                 <div className="buy-button">
-  <a
-    href="https://forms.gle/VkRAYjiwpGY3JWkM7"
-    target="_blank"
-    rel="noopener noreferrer"
-    id="applyButton"
-    className="btn btn-primary"
-  >
-    Register
-  </a>
-</div>
-
+                  <Link
+                    to="/external-apply-form"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="applyButton"
+                    className="btn btn-primary"
+                  >
+                    Register
+                  </Link>
+                </div>
               );
             })()}
 

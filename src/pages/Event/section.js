@@ -86,16 +86,16 @@ class Section extends Component {
                   </Row>
 
                   <div className="mt-4 pt-2">
-  <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLSf_gQ42JfxvGfYGDKoM_xqXYw6wJJ6A5fSxx1QPTED7IHw67Q/viewform"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn btn-success mt-2 me-2"
-  >
-    Apply Now
-  </a>
-</div>
-
+                    <Link
+                      to={{
+                        pathname: '/external-apply-form',
+                      }}
+                      target="_blank"
+                      className="btn btn-success mt-2 me-2"
+                    >
+                       Apply Now
+                    </Link>
+                  </div>
                 </div>
               </Col>
             </Row>
