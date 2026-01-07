@@ -149,7 +149,7 @@ class Footer extends Component {
               <Col sm="6">
                 <div className="text-sm-start">
                   <p className="mb-0">
-                    © 2024-2025 University Securities Investment Team.
+                    © 2025-2026 University Securities Investment Team.
                   </p>
                 </div>
               </Col>
