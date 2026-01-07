@@ -7,7 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 //CountDown
 import Countdown from 'react-countdown-now';
 
-import bgImage from '../../assets/images/event/bannerTry2.png';
+import bgImage from '../../assets/images/event/banner2026.png';
 
 // Random component
 const Completionist = () => <span>You are good to go!</span>;
