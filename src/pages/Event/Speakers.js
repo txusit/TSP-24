@@ -9,11 +9,11 @@ import SectionTitle from '../../components/Shared/SectionTitle';
 //Import Images
 import shawlogo from '../../assets/images/client/deshaw.png';
 import point72Logo from '../../assets/images/client/point72.PNG';
-import sigLogo from '../../assets/images/client/sig.JPG';
+import dodge from '../../assets/images/client/dodge.jpeg';
 import yacktmanLogo from '../../assets/images/client/yacktman.PNG';
-import blackstonelogo from '../../assets/images/client/blackstone.png';
+import roark from '../../assets/images/client/roark.jpeg';
 import citadellogo from '../../assets/images/client/Citadel_Logo_File.jpg';
-import satorilogo from '../../assets/images/client/satori_logo_vert-2.png';
+import walleye from '../../assets/images/client/walleye.jpeg';
 
 
 class Speakers extends Component {
@@ -96,20 +96,20 @@ class Speakers extends Component {
           //sponsorRank: 'Gold',
         },
         {
-          image: sigLogo,
+          image: dodge,
           alt: 'Citadel Sponsor',
           //sponsorRank: 'Silver',
         },
         {
-          image: satorilogo,
+          image: walleye,
           alt: 'Citadel Sponsor',
           //sponsorRank: 'Silver',
         },
-        // {
-        //   image: blackstonelogo,
-        //   alt: 'Citadel Sponsor',
-        //   //sponsorRank: 'Silver',
-        // },
+        {
+          image: roark,
+          alt: 'Citadel Sponsor',
+          //sponsorRank: 'Silver',
+        },
         // {
         //   image: adventLogo,
         //   alt: 'Citadel Sponsor',
